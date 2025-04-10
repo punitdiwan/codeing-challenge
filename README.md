@@ -45,10 +45,12 @@ The pages should also be responsive and viewable on mobile and tablet devices wi
 You can assume that you need to support modern ES6 compatable browsers which have features such as `fetch` or `flexbox` etc. 
 
 ### "Sign Up" page
-Create a Sign Up Page which allows the user to Sign Up (Register) into the Application. This credentials will be used for loggin into the application. The fields for signing up is Full Name, email and password. The password should be minimum 6 Characters long. The email should be in proper format. The Fields should be properly validated. 
+Create a Sign-up Page that allows the user to Sign Up (Register) for the Application. These credentials will be used for logging into the application. The fields for signing up are Full Name, email, and password. The password should be at least 6 characters long. The email should be in the proper format. The Fields should be appropriately validated. 
+
+You will develop an API that stores data in the file. The data will be stored in a JSON file as with the name `credentials.json` as a datastore. 
 
 ### "Login" page
-Create a Login Page which allows the user to Login into the Application. If user tries to access **GoTo Menu**, **Food Items**, **Order Summary** or **Thank You** page without entering valid credentials, he should be redirected to the **Login Page** page. You can use `credentials.json` file for valid credentials and use setInterval to simulate the API or you can use any dummy API for this purpose. The login credentials should be stroed in localStorage. It must be validated on the start of each page.
+Create a Login Page that allows the user to log into the Application. If a user tries to access **GoTo Menu**, **Food Items**, **Order Summary**, or **Thank You** page without entering valid credentials, he should be redirected to the **Login Page** page. You can use `credentials.json` file created earlier to validate the user's credentials. After validation of user credentials, the user details must be stored in the local storage. 
 
 ### "GoTo Menu" Page
 
@@ -56,15 +58,15 @@ Refer to the [screens/Screen1.png](./screens/Screen1.png) screen.
 
 This will be your `index.html` screen.
 
-You will need to display welcome message with a button to go the next Page, which link to the "Food Items" page.
+You will need to display a welcome message with a button to `Go To The Next Page`, which link to the "Food Items" page.
 
 ### "Food Items" page
 
 Refer to the [screens/Screen2.png](./screens/Screen2.png) for Food Items Page.
 
-For this page you will need to fetch data from URI `./data/feeds.json` using fetch API. THe data will be in JSON format containing name, price and image of the food items. Please pass 'Content-Type': 'application/json' and 'Accept': 'application/json' as headers :
+For this page, you will need to fetch data from URI `./data/feeds.json` using fetch API. The data will be in JSON format containing the name, price, and image of the food items. The data us ibkt fetched when the user details are already present in the local storage. Please pass 'Content-Type': 'application/json' and 'Accept': 'application/json' as headers :
 
-Then do the follwing:
+Then do the following:
 
 - Display the name and the price of `entries` as shown in the [screens/Screen2.png](./screens/Screen2.png)
 - Where the `+` of the entry is clicked, the Total and Cost should be updated as shown in [screens/Screen2.1.png](./screens/Screen2.1.png).
