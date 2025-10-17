@@ -19,12 +19,6 @@ Although this is a basic exercise, we'll be looking for **simple, well-designed,
 
 Please update this `README` with any tests or other documentation you created as part of your solution.
 
-Also, add the following info to your `README`:
-
-- How did you decide on the technical and architectural choices used as part of your solution?
-- Are there any improvements you could make to your submission?
-- What would you do differently if you were allocated more time?
-
 ## Details:
 
 You will need to build the following 4 pages with React:
@@ -40,9 +34,7 @@ The deployable solution should be built in a folder named **`dist`** with an ent
 Please create components for each part of the page (eg. header, content, footer, etc).
 Assets are provided in the `assets` folder. Data is provided in `data` folder in the form of JSON file.
 
-The pages should also be responsive and viewable on mobile and tablet devices with decent look and feel..
-
-You can assume that you need to support modern ES6 compatable browsers which have features such as `fetch` or `flexbox` etc. 
+The pages should also be responsive and viewable on mobile and tablet devices with decent look and feel. Each page is accessible by different URL.
 
 ### "Sign Up" page
 Create a Sign-up Page that allows the user to Sign Up (Register) for the Application. These credentials will be used for logging into the application. The fields for signing up are Full Name, email, and password. The password should be at least 6 characters long. The email should be in the proper format. The Fields should be appropriately validated. 
